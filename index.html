@@ -77,7 +77,7 @@
                         </div>
                         <div class="hero__stat">
                             <span class="hero__stat-number">100%</span>
-                            <span class="hero__stat-label">Gratuit (Free)</span>
+                            <span class="hero__stat-label">sécurisé</span>
                         </div>
                     </div>
                 </div>
@@ -452,10 +452,10 @@
                             </div>
                         </div>
                     </div>
-                    <form class="contact__form">
-                        <input type="text" placeholder="Votre nom" required>
-                        <input type="email" placeholder="Votre email" required>
-                        <textarea rows="5" placeholder="Votre message" required></textarea>
+                    <form class="contact__form" action="https://formspree.io/f/mrejaqqd" method="POST">
+                        <input type="text" name="nom" placeholder="Votre nom" required>
+                        <input type="email" name="email" placeholder="Votre email" required>
+                        <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
                         <button type="submit" class="button button--primary">Envoyer le message</button>
                     </form>
                 </div>
