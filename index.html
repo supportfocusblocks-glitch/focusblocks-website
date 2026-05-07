@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FocusBlocks - La première application de travail profond qui enregistre ce qui brise votre concentration. Arrêtez de compter les minutes, commencez à vous comprendre.">
+    <meta name="keywords" content="productivité, focus, concentration, blocage distractions, Pomodoro, travail profond">
+    <meta name="author" content="FocusBlocks Team">
+    <meta property="og:title" content="FocusBlocks - Reprenez le contrôle de votre concentration">
+    <meta property="og:description" content="Application de productivité intelligente qui détecte et bloque les distractions.">
+    <meta property="og:image" content="images/og-image.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>FocusBlocks - Reprenez le contrôle de votre concentration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- 1. BARRE DE NAVIGATION (HEADER FIXE) -->
+    <!-- ============================================ -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="images/logo.png" alt="FocusBlocks Logo" class="nav__logo-img">
+                <span>FocusBlocks</span>
+            </a>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="#features" class="nav__link">Fonctionnalités</a></li>
+                <li class="nav__item"><a href="#how-it-works" class="nav__link">Comment ça marche</a></li>
+                <li class="nav__item"><a href="#screenshots" class="nav__link">Captures d'écran</a></li>
+                <li class="nav__item"><a href="#testimonials" class="nav__link">Témoignages</a></li>
+                <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <a href="#download" class="button button--primary nav__cta">Télécharger</a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============================================ -->
+        <!-- 2. HERO SECTION -->
+        <!-- ============================================ -->
+        <section class="hero" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <span class="hero__badge">🚀 Application développée au Maroc</span>
+                    <h1 class="hero__title">
+                        Reprenez le contrôle de <span class="gradient-text">votre concentration</span>
+                    </h1>
+                    <p class="hero__description">
+                        FocusBlocks détecte automatiquement ce qui brise votre concentration et vous aide à rester productif. 
+                        <strong>Arrêtez de compter les minutes, commencez à vous comprendre.</strong>
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#" class="button button--primary button--large">
+                            <i class="fab fa-google-play"></i> Télécharger sur Google Play
+                        </a>
+                        <a href="#how-it-works" class="button button--outline button--large">
+                            <i class="fas fa-play"></i> Voir la démo
+                        </a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">5+</span>
+                            <span class="hero__stat-label">Fonctionnalités IA</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">5</span>
+                            <span class="hero__stat-label">Sessions avant IA</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">100%</span>
+                            <span class="hero__stat-label">Gratuit (Free)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="images/hero-phone.png" alt="FocusBlocks Application" class="hero__phone">
+                    <div class="hero__floating-card hero__floating-card--1">
+                        <span class="floating-icon">🎯</span>
+                        <div>
+                            <strong>Focus Score</strong>
+                            <span>85/100</span>
+                        </div>
+                    </div>
+                    <div class="hero__floating-card hero__floating-card--2">
+                        <span class="floating-icon">🔒</span>
+                        <div>
+                            <strong>Mode Focus</strong>
+                            <span>Activé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,138.7C672,128,768,160,864,181.3C960,203,1056,213,1152,197.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 3. PROBLÈME → SOLUTION -->
+        <!-- ============================================ -->
+        <section class="problem-solution section" id="problem-solution">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Vous n'êtes pas seul face aux distractions</h2>
+                    <p class="section__subtitle">FocusBlocks comprend vos habitudes et vous aide à les transformer.</p>
+                </div>
+                <div class="problem-solution__grid">
+                    <div class="problem-solution__card problem-card">
+                        <div class="problem-card__icon">❌</div>
+                        <h3>Le Problème</h3>
+                        <ul>
+                            <li><i class="fas fa-times-circle"></i> Notifications constantes qui brisent le focus</li>
+                            <li><i class="fas fa-times-circle"></i> 23 minutes pour retrouver sa concentration</li>
+                            <li><i class="fas fa-times-circle"></i> Aucune visibilité sur ses habitudes</li>
+                            <li><i class="fas fa-times-circle"></i> Procrastination sans s'en rendre compte</li>
+                        </ul>
+                    </div>
+                    <div class="problem-solution__arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="problem-solution__card solution-card">
+                        <div class="solution-card__icon">✅</div>
+                        <h3>La Solution FocusBlocks</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Détection automatique des distractions</li>
+                            <li><i class="fas fa-check-circle"></i> Sessions de focus programmées</li>
+                            <li><i class="fas fa-check-circle"></i> Analyse détaillée de vos patterns</li>
+                            <li><i class="fas fa-check-circle"></i> Mode Intelligent après 5 sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 4. FONCTIONNALITÉS CLÉS -->
+        <!-- ============================================ -->
+        <section class="features section" id="features">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Des fonctionnalités pensées pour vous</h2>
+                    <p class="section__subtitle">Tout ce dont vous avez besoin pour rester concentré.</p>
+                </div>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon feature-card__icon--purple">🤖</div>
+                        <h3>Détection Automatique</h3>
+                        <p>L'application identifie automatiquement les applications et notifications qui vous distraient pendant vos sessions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon feature-card__icon--blue">⏱️</div>
+                        <h3>Timer de Focus</h3>
+                        <p>Définissez votre durée de session et laissez-vous guider. Avec pauses intelligentes et durée personnalisable.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon feature-card__icon--green">📊</div>
+                        <h3>Statistiques Détaillées</h3>
+                        <p>Visualisez votre Focus Score, vos heures optimales et l'évolution de votre concentration semaine après semaine.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon feature-card__icon--orange">🔒</div>
+                        <h3>Mode Focus Intelligent</h3>
+                        <p>Après 5 sessions, l'app devient intelligente et bloque ciblément les applications qui vous distraient le plus.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon feature-card__icon--pink">🎤</div>
+                        <h3>Dictée Vocale</h3>
+                        <p>Définissez vos objectifs de session par la voix, en 11 langues différentes. Pratique et rapide.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon feature-card__icon--teal">🏆</div>
+                        <h3>Gamification</h3>
+                        <p>Débloquez des badges, montez de niveau et suivez votre progression pour rester motivé.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 5. COMMENT ÇA MARCHE -->
+        <!-- ============================================ -->
+        <section class="how-it-works section" id="how-it-works">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">3 étapes pour retrouver votre focus</h2>
+                    <p class="section__subtitle">Simple, rapide et efficace.</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step__number">1</div>
+                        <div class="step__icon">📥</div>
+                        <h3>Téléchargez l'application</h3>
+                        <p>Disponible gratuitement sur Android. Créez votre compte en 30 secondes.</p>
+                    </div>
+                    <div class="step__connector"></div>
+                    <div class="step">
+                        <div class="step__number">2</div>
+                        <div class="step__icon">🎯</div>
+                        <h3>Lancez votre première session</h3>
+                        <p>Définissez votre objectif, choisissez votre durée et démarrez votre session de focus.</p>
+                    </div>
+                    <div class="step__connector"></div>
+                    <div class="step">
+                        <div class="step__number">3</div>
+                        <div class="step__icon">🚀</div>
+                        <h3>Progressez et analysez</h3>
+                        <p>Après 5 sessions, le Mode Intelligent s'active et vous aide à éliminer vos distractions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 6. CAPTURES D'ÉCRAN -->
+        <!-- ============================================ -->
+        <section class="screenshots section" id="screenshots">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">L'application en images</h2>
+                    <p class="section__subtitle">Découvrez l'interface intuitive de FocusBlocks.</p>
+                </div>
+                <div class="screenshots__carousel">
+                    <div class="screenshot-card">
+                        <img src="images/screenshot-1.png" alt="Nouvelle session FocusBlocks">
+                        <p>Création de session</p>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshot-2.png" alt="Timer FocusBlocks">
+                        <p>Timer de session focus</p>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="images/screenshot-3.png" alt="Profil FocusBlocks">
+                        <p>Profil utilisateur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 7. TÉMOIGNAGES -->
+        <!-- ============================================ -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Ce que nos utilisateurs disent</h2>
+                    <p class="section__subtitle">Ils ont repris le contrôle de leur concentration.</p>
+                </div>
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">"FocusBlocks a complètement changé ma façon de travailler. Je sais maintenant exactement ce qui me distrait et quand."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-avatar">KB</div>
+                            <div>
+                                <strong>Karim B.</strong>
+                                <span>Étudiant en médecine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">"Le Mode Intelligent est bluffant. Après 5 sessions, l'app savait exactement quelles apps me distrayaient."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-avatar">SM</div>
+                            <div>
+                                <strong>Sara M.</strong>
+                                <span>Développeuse freelance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">"Enfin une app qui ne se contente pas de compter les minutes, mais qui m'aide vraiment à comprendre mes habitudes."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-avatar">YA</div>
+                            <div>
+                                <strong>Youssef A.</strong>
+                                <span>Chef de projet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 8. TARIFS / ABONNEMENTS -->
+        <!-- ============================================ -->
+        <section class="pricing section" id="pricing">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Des packs adaptés à vos besoins</h2>
+                    <p class="section__subtitle">Commencez gratuitement, passez à la vitesse supérieure quand vous voulez.</p>
+                </div>
+                <div class="pricing__grid">
+                    <div class="pricing-card">
+                        <div class="pricing-card__badge">Gratuit</div>
+                        <div class="pricing-card__price">0 <span>MAD</span></div>
+                        <span class="pricing-card__period">/mois</span>
+                        <ul class="pricing-card__features">
+                            <li><i class="fas fa-check"></i> 50 sessions par mois</li>
+                            <li><i class="fas fa-check"></i> Détection des distractions</li>
+                            <li><i class="fas fa-check"></i> Statistiques de base</li>
+                            <li><i class="fas fa-check"></i> Dictée vocale</li>
+                        </ul>
+                        <a href="#" class="button button--outline button--block">Commencer</a>
+                    </div>
+                    <div class="pricing-card pricing-card--popular">
+                        <div class="pricing-card__popular-badge">🌟 Populaire</div>
+                        <div class="pricing-card__badge">Premium</div>
+                        <div class="pricing-card__price">10 <span>MAD</span></div>
+                        <span class="pricing-card__period">/mois</span>
+                        <ul class="pricing-card__features">
+                            <li><i class="fas fa-check"></i> 100 sessions par mois</li>
+                            <li><i class="fas fa-check"></i> Mode Intelligent</li>
+                            <li><i class="fas fa-check"></i> Statistiques avancées</li>
+                            <li><i class="fas fa-check"></i> Recommandations IA</li>
+                            <li><i class="fas fa-check"></i> Blocage ciblé des apps</li>
+                        </ul>
+                        <a href="#" class="button button--primary button--block">Choisir Premium</a>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-card__badge">Premium Plus</div>
+                        <div class="pricing-card__price">20 <span>MAD</span></div>
+                        <span class="pricing-card__period">/mois</span>
+                        <ul class="pricing-card__features">
+                            <li><i class="fas fa-check"></i> Sessions illimitées</li>
+                            <li><i class="fas fa-check"></i> Tout Premium inclus</li>
+                            <li><i class="fas fa-check"></i> Support prioritaire</li>
+                            <li><i class="fas fa-check"></i> Badges exclusifs</li>
+                        </ul>
+                        <a href="#" class="button button--outline button--block">Choisir Plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 9. FAQ -->
+        <!-- ============================================ -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Questions fréquentes</h2>
+                    <p class="section__subtitle">Tout ce que vous devez savoir sur FocusBlocks.</p>
+                </div>
+                <div class="faq__list">
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            Est-ce que FocusBlocks est gratuit ?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Oui, FocusBlocks propose un pack Free avec 50 sessions par mois. Vous pouvez passer aux packs Premium pour débloquer plus de fonctionnalités.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            Comment fonctionne la détection automatique des distractions ?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>L'application utilise les statistiques d'utilisation Android pour détecter quand vous changez d'application pendant une session. Elle classe ensuite les applications en distractives, neutres ou productives.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            Qu'est-ce que le Mode Intelligent ?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Après 5 sessions complétées, le Mode Intelligent s'active automatiquement. Il analyse vos habitudes et bloque ciblément les applications qui vous distraient le plus.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            Mes données sont-elles protégées ?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Absolument. Toutes vos données sont stockées de manière sécurisée via Firebase. Aucune donnée personnelle n'est partagée avec des tiers.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            L'application est-elle disponible sur iOS ?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Pour le moment, FocusBlocks est disponible uniquement sur Android. La version iOS est en cours de développement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 10. DOWNLOAD CTA -->
+        <!-- ============================================ -->
+        <section class="download section" id="download">
+            <div class="container">
+                <div class="download__card">
+                    <h2>Prêt à reprendre le contrôle ?</h2>
+                    <p>Téléchargez FocusBlocks maintenant et commencez votre première session de focus.</p>
+                    <div class="download__buttons">
+                        <a href="#" class="button button--primary button--large">
+                            <i class="fab fa-google-play"></i> Google Play
+                        </a>
+                    </div>
+                    <div class="download__stats">
+                        <span>📱 Disponible sur Android</span>
+                        <span>🔒 100% sécurisé</span>
+                        <span>🇲🇦 Développé au Maroc</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 11. CONTACT -->
+        <!-- ============================================ -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Contactez-nous</h2>
+                    <p class="section__subtitle">Une question ? Une suggestion ? Nous sommes à votre écoute.</p>
+                </div>
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>contact@focusblocks.app</span>
+                            </div>
+                        </div>
+                        <div class="contact__card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Localisation</strong>
+                                <span>Maroc</span>
+                            </div>
+                        </div>
+                        <div class="contact__card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Support</strong>
+                                <span>24/7 pour les abonnés Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form">
+                        <input type="text" placeholder="Votre nom" required>
+                        <input type="email" placeholder="Votre email" required>
+                        <textarea rows="5" placeholder="Votre message" required></textarea>
+                        <button type="submit" class="button button--primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- 12. FOOTER -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="images/logo.png" alt="FocusBlocks" class="footer__logo">
+                    <p>La première application de travail profond qui enregistre ce qui brise votre concentration.</p>
+                    <div class="footer__social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#features">Fonctionnalités</a></li>
+                        <li><a href="#how-it-works">Comment ça marche</a></li>
+                        <li><a href="#pricing">Tarifs</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos astuces productivité chaque semaine.</p>
+                    <form class="footer__newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 FocusBlocks. Développé par EL HAMDOU AYYOUB, EL MOTARAJJI SOUFIAN, DARDOURI IMAD, EL GARBA IKRAM.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <a href="#home" class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
